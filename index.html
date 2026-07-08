@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Order delicious local and continental food online from Tasty Haven." />
+    <title>Tasty Haven | Order Food Online</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a class="brand" href="index.html">Tasty Haven</a>
+          <div class="nav-links">
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div>
+          <h1>Delicious local food made fresh and delivered fast.</h1>
+          <p>Choose from tasty Ghanaian favorites and comforting local meals, place your order, and pay in cedis your way.</p>
+          <a class="cta" href="#order">Order Now</a>
+        </div>
+        <div class="hero-card">
+          <h2 class="section-title">Why choose us</h2>
+          <ul>
+            <li>Fresh food prepared daily</li>
+            <li>Fast delivery and easy ordering</li>
+            <li>Multiple payment options</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="menu">
+        <h2 class="section-title">Featured dishes</h2>
+        <p class="section-copy">A taste of homegrown favorites, rich spices, and comforting meals.</p>
+        <div class="grid menu-grid">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Jollof rice served on a plate" loading="lazy" />
+            <h3>Jollof Rice</h3>
+            <p>Rich tomato rice with chicken and spice.</p>
+            <div class="price">₵80</div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Rice and stew dish" loading="lazy" />
+            <h3>Rice & Stew</h3>
+            <p>Flavorful stew served over soft rice.</p>
+            <div class="price">₵75</div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Traditional kenkey and fish dish" loading="lazy" />
+            <h3>Kenkey & Fish</h3>
+            <p>Smoky kenkey served with fresh fish and pepper.</p>
+            <div class="price">₵90</div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Grilled chicken and rice meal" loading="lazy" />
+            <h3>Grilled Chicken</h3>
+            <p>Juicy grilled chicken with rice and salad.</p>
+            <div class="price">₵100</div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Fried rice and chicken platter" loading="lazy" />
+            <h3>Fried Rice & Chicken</h3>
+            <p>Flavored rice with chicken and vegetables.</p>
+            <div class="price">₵85</div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Spicy noodles with vegetables" loading="lazy" />
+            <h3>Spicy Noodles</h3>
+            <p>Hot noodles tossed with vegetables and meat.</p>
+            <div class="price">₵70</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="order">
+        <h2 class="section-title">Place your order</h2>
+        <p class="section-copy">Pick your favorite dish, choose a payment method, and we’ll handle the rest.</p>
+        <div class="form-grid">
+          <div class="form-card">
+            <form id="order-form">
+              <label for="name">Your name</label>
+              <input id="name" type="text" placeholder="Enter your name" />
+
+              <label for="dish">Choose dish</label>
+              <select id="dish">
+                <option value="jollof">Jollof Rice - ₵80</option>
+                <option value="egusi">Egusi Soup - ₵95</option>
+                <option value="stew">Rice & Stew - ₵75</option>
+                <option value="kenkey">Kenkey & Fish - ₵90</option>
+                <option value="grilled">Grilled Chicken - ₵100</option>
+                <option value="friedrice">Fried Rice & Chicken - ₵85</option>
+                <option value="noodles">Spicy Noodles - ₵70</option>
+              </select>
+
+              <label for="quantity">Quantity</label>
+              <input id="quantity" type="number" min="1" value="1" />
+
+              <label>Payment method</label>
+              <div class="radio-group">
+                <label><input type="radio" name="payment" value="Cash on Delivery" checked /> Cash on Delivery</label>
+                <label><input type="radio" name="payment" value="Mobile Money" /> Mobile Money</label>
+                <label><input type="radio" name="payment" value="Card" /> Card</label>
+              </div>
+
+              <label for="address">Delivery address</label>
+              <textarea id="address" rows="4" placeholder="Where should we deliver?"></textarea>
+
+              <button type="submit">Place Order</button>
+            </form>
+          </div>
+
+          <div class="card">
+            <h3>Order summary</h3>
+            <div id="summary" class="summary"></div>
+            <p class="section-copy">We accept cash, mobile money, and card payments for your convenience.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>© <span id="year"></span> Tasty Haven. Fresh food, delivered with care.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
